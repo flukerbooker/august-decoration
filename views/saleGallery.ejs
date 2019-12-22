@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<% include partials/header %>
+<link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+
+<body>
+    <% include partials/navbar %>
+    <div id="content-wrap">
+        <section id="project-detail">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="project-name">Sale Gallery : The Politan Aqua</h2>
+              </div>
+              <div class="col-md-12">
+                <div id="myBtnContainer">
+                  <button class="btn active" id="all"> Show all</button>
+                  <button class="btn" id="btn-wait"> Waiting Area</button>
+                  <button class="btn" id="btn-stair"> Hall Stair</button>
+                </div>
+              </div>
+            </div>
+            <div class="row my-shuffle-container">
+              <div class="col-md-6 picture-item column" data-groups='["wait"]'>
+                <div class="aspect aspect--16x9">
+                  <div class="aspect__inner">
+                    <a href="../images/Sale-gallery-1.jpg" class="js-img-viwer">
+                      <img src="../images/Sale-gallery-1.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 picture-item column" data-groups='["wait"]'>
+                <div class="aspect aspect--16x9">
+                  <div class="aspect__inner">
+                    <a href="../images/Sale-gallery-2.jpg" class="js-img-viwer">
+                      <img src="../images/Sale-gallery-2.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 picture-item column" data-groups='["stair"]'>
+                <div class="aspect aspect--16x9">
+                  <div class="aspect__inner">
+                    <a href="../images/Sale-gallery-3.jpg" class="js-img-viwer">
+                      <img src="../images/Sale-gallery-3.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 picture-item column" data-groups='["stair"]'>
+                <div class="aspect aspect--16x9">
+                  <div class="aspect__inner">
+                    <a href="../images/Sale-gallery-4.jpg" class="js-img-viwer">
+                      <img src="../images/Sale-gallery-4.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    <% include partials/footer %>
+    <script src="../javascripts/shuffle.js"></script>
+    <script src="../javascripts/smartPhoto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<% include partials/header %>
+<link rel="stylesheet" href="../stylesheets/style.css">
+</head>
+<body>
+    <% include partials/navbar %>
+    <div id="content-wrap">
+        <section id="project-detail">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="project-name">The Politan-Breeze, Nonthaburi</h2>
+              </div>
+              <div class="col-md-12">
+                <div id="myBtnContainer">
+                  <button class="btn active" id="all"> Show all</button>
+                  <button class="btn" id="btn-main1"> Main Lobby</button>
+                  <button class="btn" id="btn-library"> Library Area</button>
+                  <button class="btn" id="btn-fitness"> Fitness Area</button>
+                </div>
+              </div>
+            </div>
+            <div class="row my-shuffle-container">
+              <div class="col-md-6 picture-item column" data-groups='["main1"]'>
+                <div class="aspect aspect--16x9">
+                  <div class="aspect__inner">
+                    <a href="../images/Politan-breeze-1.jpg" class="js-img-viwer">
+                      <img src="../images/Politan-breeze-1.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 picture-item column" data-groups='["library"]'>
+                <div class="aspect aspect--16x9">
+                  <div class="aspect__inner">
+                    <a href="../images/Politan-breeze-2.jpg" class="js-img-viwer">
+                      <img src="../images/Politan-breeze-2.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 picture-item column" data-groups='["fitness"]'>
+                <div class="aspect aspect--16x9">
+                  <div class="aspect__inner">
+                    <a href="../images/Politan-breeze-3.jpg" class="js-img-viwer">
+                      <img src="../images/Politan-breeze-3.jpg">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    <% include partials/footer %>
+    <script src="../javascripts/shuffle.js"></script>
+    <script src="../javascripts/smartPhoto.js"></script>
+</body>
+
+</html>
