@@ -1,11 +1,173 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
+    <% include partials/header %>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <% include partials/navbar %>
+    <header id="home">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/head1.jpg">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/head3.jpg">
+            <div class="carousel-caption">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./images/head2.jpg">
+            <div class="carousel-caption">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </header>
+    <div id="content-wrap">
+      <section id="aboutus">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <center><img class="img-info" src="./images/info.jpg"></center>
+            </div>
+            <div class="col-md-6">
+              <h2 class="banner">Always focus on every single detail</h2>
+              <hr>
+              <p class="info"><b>August Decoration</b> was established in 1990. August Decoration are interior fit-out and
+                refurbishment contractor specialized in Commercial offices, governor offices, Luxury Residences, Hotels
+                and
+                interior restaurant. Over 25 years of experience in interior contractor industry, we have high skilled
+                teams
+                and technicians specialized in all aspect of the interior construction that can execute the project within
+                the short period of time.</p>
+              <p>We offer a turn key services from providing a high quality interior designer, bill of quantity, to giving
+                a
+                feedback on clients preliminary design concept. With highly skilled technicians in our hand, we are able
+                to
+                manufacture and craft every finishes on any surface from dry wall to built in and loose furniture. We
+                absorb
+                our client’s aspiration and transform that into a unique and masterpiece product.</p>
+              <p>From the first day of establishing of the company until now, we always hold the principle of focusing on
+                every detail of every aspect of the interior construction and design to maximize client’s satisfaction and
+                to minimize the defect of every project.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="project">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Our Project</h1>
+            </div>
+            <br> <br> <br> <br>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Politan-rive.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2018-2019</h6>
+                  <h5 class="card-title">The Politan Rive, Nonthaburi</h5>
+                  <a href="project1.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Politan-breeze.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2017-2018</h6>
+                  <h5 class="card-title">The Politan Breeze, Nonthaburi</h5>
+                  <a href="project2.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Supreme.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2017-2018</h6>
+                  <h5 class="card-title">Supreme Court of Thailand</h5>
+                  <a href="project3.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Sale-gallery.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2016-2017</h6>
+                  <h5 class="card-title">Sale Gallery : The Politan Aqua</h5>
+                  <a href="project4.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/The-Tree.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2016</h6>
+                  <h5 class="card-title">The Tree Rio Bang-Aor</h5>
+                  <a href="project5.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Residence.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2015-2016</h6>
+                  <h5 class="card-tittle">Residence Metropole Thonglor</h5>
+                  <a href="project6.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Metropolis.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2014</h6>
+                  <h5 class="card-tittle">Metropolis Sukhumvit 39</h5>
+                  <a href="project7.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Interchange.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2013</h6>
+                  <h5 class="card-tittle">The Tree Interchange Bangpho</h5>
+                  <a href="project8.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+            <div id="working" class="col-md-6 col-lg-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/Hotel-muse.jpg" alt="Card image" style="width:100%">
+                <div class="card-body">
+                  <h6>2012</h6>
+                  <h5 class="card-tittle">Hotel Muse, Bangkok</h5>
+                  <a href="project9.html" class="btn btn-primary stretched-link">See More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <% include partials/footer %>
+    <script src="./javascripts/scrolling.js"></script>
   </body>
 </html>
