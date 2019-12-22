@@ -4,8 +4,10 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { 
-    page: 'August Decoration' 
+    title: 'August Decoration',
+    page: 'Home'
   });
+  res.redirect('/');
 });
 
 module.exports = router;
