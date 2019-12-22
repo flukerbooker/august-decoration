@@ -19,13 +19,10 @@ nav ul li a{
   height: 100vh;
 }
 .carousel-inner img {
-  position: relative;
-  top: 0;
-  left: 0;
-  min-width: 100vw;
+  width: 100vw;
   height: 100vh;
-  max-width: none;
-  background-position: center center; 
+  background-position: center;
+  background-size: cover;
 }
 #content-wrap{
   height: auto;
@@ -82,18 +79,8 @@ nav ul li a{
 .banner{
   margin-top: 5%;
 }
-.btn {
-  border: none;
-  outline: none;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: #ddd;
-}
 .btn.active {
-  background-color: #666;
+  background-color: rgb(39, 39, 39);
   color: white;
 }
 #myBtnContainer{
@@ -163,7 +150,6 @@ object-fit: cover;
 ::after {
 box-sizing: border-box;
 }
-
 figure {
 margin: 0;
 padding: 0;

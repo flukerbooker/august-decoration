@@ -7,7 +7,12 @@ router.get('/', function(req, res, next) {
     title: 'August Decoration',
     page: 'Home'
   });
-  res.redirect('/');
+});
+router.get('/project/politanRive', function(req, res, next) {
+  res.render('politanRive', { 
+    title: 'August Decoration',
+    page: 'Project'
+  });
 });
 
 module.exports = router;
