@@ -37,6 +37,7 @@ nav ul li a{
 }
 .info{
   text-indent: 10%;
+  text-align: justify;
 }
 #project{
   text-align: center;
