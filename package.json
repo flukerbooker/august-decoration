@@ -1,0 +1,28 @@
+{
+  "name": "augustDecProject",
+  "version": "1.0.0",
+  "description": "The first freelance project, a static website for collecting portfolio of August Decoration Company. Apply the knowledge with Node.js, Bootstrap 4, and stuff of Javascript plugin\r ## Getting Started\r These instructions will get you a copy of the project up and running on your local machine for development. See deployment for notes on how to deploy the project on a live system.\r ### Installing\r Install the package.json via terminal by\r ```\r npm install\r ```\r ### Running\r Start a server via terminal by\r ```\r npm start\r ```\r ## Built With\r * [Node.js](https://nodejs.org/en/) - open-source JavaScript tool \r * [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - a web framework",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flukerbooker/augustDecProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flukerbooker/augustDecProject/issues"
+  },
+  "homepage": "https://github.com/flukerbooker/augustDecProject#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "ejs-lint": "^1.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  }
+}

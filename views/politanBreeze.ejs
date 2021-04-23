@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
-<% include partials/header %>
-<link rel="stylesheet" href="../stylesheets/style.css">
-</head>
-<body>
-    <% include partials/navbar %>
-    <div id="content-wrap">
+<%- include('partials/header') %>
+  <link rel="stylesheet" href="../stylesheets/style.css">
+  </head>
+
+  <body>
+    <%- include('partials/navbar') %>
+      <div id="content-wrap">
         <section id="project-detail">
           <div class="container">
             <div class="row">
@@ -53,9 +54,9 @@
           </div>
         </section>
       </div>
-    <% include partials/footer %>
-    <script src="../javascripts/shuffle.js"></script>
-    <script src="../javascripts/smartPhoto.js"></script>
-</body>
+      <%- include('partials/footer') %>
+        <script src="../javascripts/shuffle.js"></script>
+        <script src="../javascripts/smartPhoto.js"></script>
+  </body>
 
 </html>
