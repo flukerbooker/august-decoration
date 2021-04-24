@@ -5,7 +5,7 @@ import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles({
   headImage: {
-    borderRadius: "1.5rem",
+    borderRadius: "1.2rem",
     height: "80rem",
     width: "100%",
     objectFit: "cover",
@@ -17,20 +17,20 @@ const useStyles = makeStyles({
     position: "relative",
   },
 
-  imgName: {
-    fontSize: "3rem",
-    textAlign: "center",
-    width: "100%",
-    position: "absolute",
-    left: "50%",
-    bottom: "0",
-    margin: "0",
-    transform: "translateX(-50%)",
-    backgroundColor: "rgba(0,0,0,0.5)",
-    padding: "2.5rem 0",
-    color: "white",
-    zIndex: 1,
-  },
+  // imgName: {
+  //   fontSize: "3rem",
+  //   textAlign: "center",
+  //   width: "100%",
+  //   position: "absolute",
+  //   left: "50%",
+  //   bottom: "0",
+  //   margin: "0",
+  //   transform: "translateX(-50%)",
+  //   backgroundColor: "rgba(0,0,0,0.5)",
+  //   padding: "2.5rem 0",
+  //   color: "white",
+  //   zIndex: 1,
+  // },
 });
 
 const images = [
@@ -69,7 +69,7 @@ const ImageSlider = () => {
           <Box
             className={classes.imgWrapper}
             key={image.id}
-            borderRadius="1.5rem"
+            borderRadius="1.2rem"
           >
             <img
               src={image.url}

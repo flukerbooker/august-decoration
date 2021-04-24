@@ -1,6 +1,6 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
@@ -33,8 +33,11 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     fontFamily: "inherit",
-    fontSize: "1.8rem",
+    fontSize: "2rem",
     padding: "0 3.5rem",
+  },
+  active: {
+    color: "#DCB239",
   },
 }));
 
@@ -61,9 +64,11 @@ const Navbar = () => {
             <Button
               key={item.title}
               color="inherit"
-              component={Link}
+              component={NavLink}
               to={item.link}
+              exact
               className={classes.button}
+              activeClassName={classes.active}
             >
               {item.title}
             </Button>
