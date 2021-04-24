@@ -5,10 +5,10 @@ import ImageSlider from "../components/ImageSlider";
 const Home = () => {
   return (
     <React.Fragment>
+      <ImageSlider />
       {/* <Typography variant="h2" align="center">
         Home
       </Typography> */}
-      <ImageSlider />
     </React.Fragment>
   );
 };

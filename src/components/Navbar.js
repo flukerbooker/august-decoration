@@ -4,23 +4,22 @@ import { Link } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
+  title: {
+    fontSize: "2.4rem",
+    margin: 0,
+  },
   menuButton: {
     marginRight: theme.spacing(2),
   },
   leftWrapper: {
     display: "flex",
-    paddingLeft: "4rem",
     flexGrow: 1,
-  },
-  rightWrapper: {
-    paddingRight: "4rem",
   },
   titleWrapper: {
     display: "flex",
@@ -29,13 +28,13 @@ const useStyles = makeStyles((theme) => ({
     padding: "2rem 0",
   },
   logo: {
-    height: "5rem",
-    width: "6rem",
+    height: "8rem",
+    width: "9rem",
   },
   button: {
     fontFamily: "inherit",
-    fontSize: 19.5,
-    padding: "0 2rem",
+    fontSize: "1.8rem",
+    padding: "0 3.5rem",
   },
 }));
 
@@ -54,24 +53,22 @@ const Navbar = () => {
         <Box className={classes.leftWrapper}>
           <Box className={classes.titleWrapper}>
             <img src="/images/logo.png" className={classes.logo} alt="logo" />
-            <Typography variant="h6">August Decoration</Typography>
+            <h2 className={classes.title}>August Decoration</h2>
           </Box>
         </Box>
-        <Box className={classes.rightWrapper}>
-          {navItem.map((item) => {
-            return (
-              <Button
-                key={item.title}
-                color="inherit"
-                component={Link}
-                to={item.link}
-                className={classes.button}
-              >
-                {item.title}
-              </Button>
-            );
-          })}
-        </Box>
+        {navItem.map((item) => {
+          return (
+            <Button
+              key={item.title}
+              color="inherit"
+              component={Link}
+              to={item.link}
+              className={classes.button}
+            >
+              {item.title}
+            </Button>
+          );
+        })}
       </Toolbar>
     </AppBar>
   );
