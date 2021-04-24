@@ -5,6 +5,7 @@ import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles({
   headImage: {
+    borderRadius: "1.5rem",
     height: "80rem",
     width: "100%",
     objectFit: "cover",
@@ -58,21 +59,25 @@ const ImageSlider = () => {
       navButtonsAlwaysVisible={true}
       navButtonsWrapperProps={{
         style: {
-          padding: "0 7rem",
+          padding: "0 4rem",
         },
       }}
       className={classes.carousel}
     >
       {images.map((image) => {
         return (
-          <Box className={classes.imgWrapper} key={image.id}>
+          <Box
+            className={classes.imgWrapper}
+            key={image.id}
+            borderRadius="1.5rem"
+          >
             <img
               src={image.url}
               className={classes.headImage}
               alt={image.name}
               ref={imageRef}
             />
-            <h2 className={classes.imgName}>{image.name}</h2>
+            {/* <h2 className={classes.imgName}>{image.name}</h2> */}
           </Box>
         );
       })}
