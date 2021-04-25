@@ -5,7 +5,6 @@ import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles({
   headImage: {
-    borderRadius: "1.2rem",
     height: "80rem",
     width: "100%",
     objectFit: "cover",
@@ -66,11 +65,7 @@ const ImageSlider = () => {
     >
       {images.map((image) => {
         return (
-          <Box
-            className={classes.imgWrapper}
-            key={image.id}
-            borderRadius="1.2rem"
-          >
+          <Box className={classes.imgWrapper} key={image.id}>
             <img
               src={image.url}
               className={classes.headImage}
