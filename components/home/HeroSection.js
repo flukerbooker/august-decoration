@@ -1,5 +1,6 @@
 import classes from "./HeroSection.module.css";
 import Image from "next/image";
+import headImage from "../../public/images/head1.jpg";
 
 const HeroSection = () => {
   return (
@@ -14,7 +15,7 @@ const HeroSection = () => {
         </p>
       </div>
       <div className={classes.imgContainer}>
-        <Image src="" alt="welcome-image" />
+        <Image src={headImage} alt="welcome-image" />
       </div>
     </div>
   );
