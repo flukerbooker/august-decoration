@@ -3,7 +3,7 @@ import HeroSection from "../components/home/HeroSection";
 
 const HomePage = (props) => {
   return (
-    <div>
+    <>
       <Head>
         <title>August | Home</title>
         <meta
@@ -12,7 +12,7 @@ const HomePage = (props) => {
         />
       </Head>
       <HeroSection />
-    </div>
+    </>
   );
 };
 

@@ -1,11 +1,4 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 6rem;
-}
-
-.header ul {
+.nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -13,11 +6,11 @@
   align-items: baseline;
 }
 
-.header li {
+.nav > ul > li {
   margin-left: 3rem;
 }
 
-.header a {
+.nav a {
   position: relative;
   text-decoration: none;
   font-size: 1rem;
@@ -25,7 +18,7 @@
   color: black;
 }
 
-.header a::before {
+.nav a::before {
   content: "";
   position: absolute;
   display: block;
@@ -38,6 +31,10 @@
   transition: transform 0.3s ease;
 }
 
-.header a:hover::before {
+.nav a:hover::before {
   transform: scaleX(1);
+}
+
+.nav div {
+  display: none;
 }

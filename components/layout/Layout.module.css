@@ -1,6 +1,55 @@
-.main {
+.layout {
   position: relative;
-  margin: auto;
+  margin: 0 auto;
+  height: 100%;
   width: 100%;
   max-width: 80rem;
+}
+
+.layout header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+}
+
+.layout main {
+  height: calc(100vh - 6rem);
+}
+
+@media only screen and (max-width: 85rem) {
+  .layout {
+    max-width: 70rem;
+  }
+}
+
+@media only screen and (max-width: 75rem) {
+  .layout {
+    max-width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 62rem) {
+  .layout {
+    max-width: 50rem;
+  }
+}
+
+@media only screen and (max-width: 54rem) {
+  .layout {
+    max-width: 40rem;
+  }
+  .layout header > nav {
+    display: none;
+  }
+  .layout main {
+    height: calc(100vh - 8rem);
+  }
+}
+
+@media only screen and (max-width: 42rem) {
+  .layout {
+    max-width: 30rem;
+    padding: 0 2rem;
+  }
 }

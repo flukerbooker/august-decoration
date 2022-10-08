@@ -1,0 +1,58 @@
+.mobile_nav {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile_nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.mobile_nav > ul > li {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.mobile_nav a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: black;
+}
+
+.mobile_nav a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.mobile_nav a:hover::before {
+  transform: scaleX(1);
+}

@@ -1,0 +1,74 @@
+.hamburger {
+  display: none;
+  cursor: pointer;
+  height: 48px;
+  width: 48px;
+  top: 20px;
+  right: 0;
+  position: absolute;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+  user-select: none;
+  outline: none;
+  transform: none;
+}
+
+.hamburger.toggled {
+  transform: rotate(-90deg);
+}
+
+.hamburger > div.first {
+  background: currentColor;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  width: 24px;
+  top: 16px;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+  transform: none;
+}
+
+.hamburger > div.second {
+  background: currentColor;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  width: 24px;
+  top: 23px;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+  transform: none;
+}
+
+.hamburger > div.third {
+  background: currentColor;
+  height: 2px;
+  left: 12px;
+  position: absolute;
+  width: 24px;
+  top: 30px;
+  transition: all 0.4s cubic-bezier(0, 0, 0, 1) 0s;
+  transform: none;
+}
+
+.hamburger > div.first.toggled {
+  transform: rotate(-45deg) translate(-4.93px, 4.93px);
+}
+
+.hamburger > div.second.toggled {
+  transform: scaleX(0);
+}
+
+.hamburger > div.third.toggled {
+  transform: rotate(45deg) translate(-4.93px, -4.93px);
+}
+
+@media only screen and (max-width: 54rem) {
+  .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 42rem) {
+  .hamburger {
+    right: 24px;
+  }
+}
